@@ -1,60 +1,145 @@
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Water Tank Problem</title>
-    <link rel='stylesheet' href="./style.css"/>
-    <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500&display=swap"
+      rel="stylesheet"
+    />
     <script src="./Water_Tank_Problem.js" defer></script>
-</head>
-<body>
+  </head>
+  <body>
     <div id="mainContainer" class="mainContainer">
-        <div class="title"><h2>Water Tank Problem</h2></div>
-        <div id="waterWallCon" class="waterWallCon">
-            <div style="display: flex;justify-content: center;align-items: center;height: 30px;">
-                <h3 style="width: 7%;">Input</h3>
-                <input type="text" id="inputArr"/>
-            </div>
-            <h4>eg. input: [4,2,0,0,1,0]</h4>
-            <table id="waterWallTab">
-                <tbody>
-                    <tr>
-                        <td></td><td class="wall"><td class="wall"></td>
-                        <td></td><td class="wall"><td class="wall"></td>
-                        <td></td><td class="wall"><td class="wall"></td>
-                        <td></td><td class="wall"><td class="wall"></td>
-                    </tr>
-                    <tr><td class="water"></td><td></td></tr>
-                    <tr><td class="water"></td><td></td></tr>
-                    <tr><td></td><td class="wall"></td></tr>
-                    <tr><td class="water"></td><td></td></tr>
-                    <tr><td class="water"></td><td></td></tr>
-                    <tr><td></td><td class="wall"></td></tr>
-                    <tr><td class="water"></td><td></td></tr>
-                    <tr><td class="water"></td><td></td></tr>
-                    <tr><td></td><td class="wall"></td></tr>
-                    <tr><td class="water"></td><td></td></tr>
-                    <tr><td class="water"></td><td></td></tr>
-                    <tr><td></td><td class="wall"></td></tr>
-                    <tr><td class="water"></td><td></td></tr>
-                    <tr><td class="water"></td><td></td></tr>
-                    <tr><td></td><td class="wall"></td></tr>
-                    <tr><td class="water"></td><td></td></tr>
-
-                </tbody>
-            </table>
+      <div class="title"><h2>Water Tank Problem</h2></div>
+      <div id="waterWallCon" class="waterWallCon">
+        <div
+          style="
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 30px;
+          "
+        >
+          <h3 style="width: 7%">Input</h3>
+          <input type="text" id="inputArr" />
         </div>
-        <div id="waterCon" class="waterCon">
-            <h3>Output</h3>
-            <h3><span id="output"></span> units</h3>
-            <table id="waterTab">
-                <tbody>
-                    <tr><td></td><td></td></tr>
-                    <tr><td></td><td></td></tr>
-                </tbody>
-            </table>
-        </div>
+        <h4>eg. input: [4,2,0,0,1,0]</h4>
+        <table id="waterWallTab">
+          <tbody>
+            <tr>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+            </tr>
+            <tr>
+              <td></td>
+              <td class="wall"></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+            </tr>
+            <tr>
+              <td></td>
+              <td class="wall"></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+            </tr>
+            <tr>
+              <td></td>
+              <td class="wall"></td>
+              <td class="wall"></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+            </tr>
+            <tr>
+              <td></td>
+              <td class="wall"></td>
+              <td class="wall"></td>
+              <td class="water"></td>
+              <td class="water"></td>
+              <td class="wall"></td>
+              <td></td>
+              <td></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <div id="waterCon" class="waterCon">
+        <h3>Output</h3>
+        <h3><span id="output"></span> units</h3>
+        <table id="waterTab">
+          <tbody>
+            <tr>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+            </tr>
+            <tr>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+            </tr>
+            <tr>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+            </tr>
+            <tr>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+            </tr>
+            <tr>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td class="water"></td>
+              <td class="water"></td>
+              <td></td>
+              <td></td>
+              <td></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
     </div>
-</body>
+  </body>
 </html>
